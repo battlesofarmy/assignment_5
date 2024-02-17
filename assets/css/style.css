@@ -1,0 +1,64 @@
+/* ----------======  Global Styles  ======---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --color: #1E83EC;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* ----------======  My more CSS styles  ======---------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------======  Header Section Desing  ======---------- */
+header{
+    background-color: #d1e0e0;
+}
+
+
+
+
+
+
+/* ----------======  Footer Section Design  ======---------- */
+footer{
+    background-color: #d1e0e0;
+    padding: 10px 0;
+}
+footer p{
+    margin-bottom: 0;
+}
+
