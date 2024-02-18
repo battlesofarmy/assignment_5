@@ -105,7 +105,41 @@ img {
     border-radius: 30px;
     padding: 20px;
 }
-
+.booking .set{
+    background-color: #F7F8F8;
+    width: 110px;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-align: center;
+}
+.booking .able i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+.booking .all-set span{
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.booking .price-box{
+    background-color: #F7F8F8;
+    padding: 20px;
+    border-radius: 8px;
+}
+.totalset{
+    background-color: var(--color);
+    padding: 0 10px;
+    color: white;
+    border-radius: 8px;
+}
+.boxtitle, .total{
+    font-size: 18px;
+    font-weight: 600;
+}
+.booking .cupon input{
+    
+}
 
 
 
