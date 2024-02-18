@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 :root{
-    --color: #1E83EC;
+    --color: #1DD100;
 }
 body {
     font-family: 'Poppins', sans-serif;
@@ -23,31 +23,88 @@ img {
 
 
 /* ----------======  My more CSS styles  ======---------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.btn-custom{
+    background-color: var(--color);
+    padding: 12px 22px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.btn-cutom:hover{
+    background-color: var(--color);
+}
+.title{
+    font-size: 38px;
+}
 
 
 
 /* ----------======  Header Section Desing  ======---------- */
-header{
-    background-color: #d1e0e0;
+.header .navbar h2{
+    font-size: 38px;
+}
+.header .navbar ul li{
+    padding: 0 16px;
 }
 
+.header .navbar .btn-bus{
+    font-size: 18px;
+    background-color: #d3f5cf;
+    padding: 14px 22px;
+    border: 1px solid #1DD100;
+    color: #1DD100;
+}
+/* ----------======  Banner Section Desing  ======---------- */
+.banner .col-md-12{
+    background: url('../img/banner.png') no-repeat center center;
+    background-size: cover;
+    padding: 130px 0;
+}
+.banner h2{
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+}
+.banner p{
+    width: 700px;
+    color: white;
+    margin: auto;
+    padding: 20px 0;
+}
+
+
+/* ----------======  Offer Section Desing  ======---------- */
+
+.offer .item{
+    background-color: #FFBF0F;
+    padding: 40px 30px;
+    border-radius: 20px;
+}
+.offer .item h2{
+    font-weight: 600;
+}
+
+.offer{
+    padding: 80px 0;
+}
+
+
+
+
+
+.booking{
+    background-color: #F7F8F8;
+    padding: 80px 0;
+}
+.booking .d-flex i{
+    font-size: 30px;
+    margin-right: 30px;
+    margin-top: 5px;
+}
+.box{
+    background-color: white;
+    border-radius: 30px;
+    padding: 20px;
+}
 
 
 
@@ -55,8 +112,10 @@ header{
 
 /* ----------======  Footer Section Design  ======---------- */
 footer{
-    background-color: #d1e0e0;
-    padding: 10px 0;
+    background-color: black;
+    color: white;
+    padding-top: 70px;
+    padding-bottom: 20px;
 }
 footer p{
     margin-bottom: 0;
