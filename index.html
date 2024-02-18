@@ -22,7 +22,7 @@
 <body>
 
 <!---- ==========   Navbar Section Design   ========== ---->
-<!-- <header class="header">
+<header class="header">
     <div class="container">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
@@ -54,29 +54,29 @@
             </div>
           </nav>
     </div>
-</header> -->
+</header>
 
 <!---- ==========   Banner Section Design   ========== ---->
-<!-- <section class="banner">
+<section class="banner mt-4">
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center">
         <h2>End-to-End Travel with <br><b style="color:#1DD100;">Paribahan</b></h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, atque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, aspernatur?</p>
-        <button class="btn btn-custom">Buy Trickets</button>
+        <button class="btn btn-custom"><a href="#buy">Buy Trickets</a></button>
       </div>
     </div>
   </div>
-</section> -->
+</section>
 
 <!---- ==========   Banner Section Design   ========== ---->
-<!-- <section class="offer">
+<section class="offer">
   <div class="container">
     <div class="row">
       <div class="col-md-12 text-center py-4">
         <h2 class="title">Best Offers For You</h2>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 my-2">
         <div class="item">
           <div class="row">
             <div class="col-md-8">
@@ -91,7 +91,7 @@
           </div>
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 my-2">
         <div class="item">
           <div class="row">
             <div class="col-md-8">
@@ -111,52 +111,72 @@
       </div>
     </div>
   </div>
-</section> -->
+</section>
 
 
 
-<section class="booking">
+<section class="booking" id="buy">
   <div class="container">
-    <div class="row box">
+    <div class="row box py-5">
       <div class="col-md-8">
-        <div class="d-flex">
+        <div class="d-flex justify-content-between">
           <div class="d-flex">
             <i class="fa-solid fa-bus mr-4"></i>
             <div class="text">
-              <h2>GreenLIne Poribohon</h2>
-              <h5>Coach-009-WEB ! AC_Business</h5>
+              <h4>GreenLIne Poribohon</h4>
+              <span>Coach-009-WEB ! AC_Business</span>
             </div>
            </div>
            <div>
-            <button class="btn btn-custom" style="margin-left: 40px;">
-               <div class="setLest">40</div> seats left
+            <button class="btn btn-custom" style="margin-left: 30px;">
+               <span class="setLest">40</span> seats left
             </button>
            </div>
-
-
         </div>
 
+        <div class="price-box mt-4">
+          <div class="d-flex justify-content-between">
+            <p>Routine</p>
+            <p><b>Dhaka-Shariatpur</b></p>
+          </div>
+          <hr>
+          <div class="d-flex justify-content-between">
+            <p>Deparature Time</p>
+            <p><b>9:00 PM</b></p>
+          </div>
+          <hr>
+          <div class="d-flex justify-content-between py-4">
+            <button class="time-btn btn">Boarding Point - Laxmipur</button>
+            <button class="time-btn btn">Dropping Point - Bogura</button>
+            <button class="time-btn btn">Est. Time - 11 Hour</button>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-md-4 d-flex align-items-center text-center justify-content-center">
+        <div class="">
+          <img src="assets/img/fare.png" alt="">
+          <h2 style="font-size: 32px; font-weight: 600;" class="mt-4">550 Taka</h2>
+          <p>Per Seat</p>
+        </div>
       </div>
     </div>
 
 
     <div class="row box mt-4">
-
       <div class="col-md-7">
+
         <div class="row">
           <div class="col-md-12">
             <h4>Select Your Seat</h4>
             <hr>
             <div class="d-flex justify-content-between able">
-              <div>
-                <i class="fa-solid fa-couch"></i> Available
-              </div>
-              <div>
-                <i class="fa-solid fa-couch"></i> Selected
-              </div>
+              <div><i class="fa-solid fa-couch"></i> Available</div>
+              <div style="color: #1DD100;"><i class="fa-solid fa-couch"></i> Selected              </div>
             </div>
           </div>
-        </div>
+      </div>
 
 
 
@@ -193,8 +213,6 @@
 
 
 
-
-
       </div>
 
       <div class="col-md-5">
@@ -208,24 +226,26 @@
               <span>Price</span>
           </div>
           <hr>
-            <div class="items">
-              <div class="py-2 d-flex justify-content-between">
+            <div class="items py-2">
+              <!-- <div class="py-2 d-flex justify-content-between">
                 <span>c2</span>
                 <span>Economoy</span>
                 <span>550</span>
-              </div>
+              </div> -->
             </div>
-            <div class="discount"></div>
-
+            <!-- <div class="discount"></div> -->
             <hr>
+
             <div class="total d-flex justify-content-between">
               <span>TotalPrice</span>
               <span>BDT <span class="totalsetprice">0</span> </span>
             </div>
 
+            <div class="discount"></div>
+
             <div class="cupon text-center input-group my-3">
-              <input type="text" id="myInput" class="form-control w-75" />
-              <button class="btn btn-custom" onclick="getValue()">Apply</button>
+              <input type="text" id="myInput" class="form-control w-75" placeholder="Have any cupon?"/>
+              <button disabled id="myInputButon" class="btn btn-custom" onclick="getValue()">Apply</button>
             </div>
 
 
@@ -236,6 +256,32 @@
             </div>
 
         </div>
+
+
+        <formf>
+          <div class="form-row mt-3">
+          <div class="form-group py-2">
+            <label for="inputAddress">Pacenger Name</label>
+            <input type="text" class="form-control mt-2" id="inputAddress" placeholder="Inter Your Name">
+          </div>
+          <div class="form-group py-2">
+            <label for="inputAddress">Phone Number</label>
+            <input type="number" class="form-control mt-2 number" id="inputAddress" placeholder="Inter Your Mobile Number" oninput="getTickets()">
+          </div>
+          <div class="form-group py-2">
+            <label for="inputAddress">Email ID</label>
+            <input type="email" class="form-control mt-2" id="inputAddress" placeholder="Inter Your Email ID">
+          </div>
+
+          <button disabled id="submit" onclick="successMess()" type="submit" class="btn btn-custom form-control mt-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Tickets</button>
+        </form>
+
+        <div class="terms d-flex justify-content-around pt-4">
+          <u><p>Terms & Conditions</p></u>
+          <u><p>Cancellation Policy</p></u>
+        </div>
+
+
       </div>
     </div>
   </div>
@@ -245,10 +291,31 @@
 
 
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body text-center">
+        <img src="assets/img/success.png" alt="">
+        <div style="color: green;">Success</div>
+        <b><h4>Thank you for Booking Our Bus Seats. We are working hard to find the best service and deals for you. </h4></b>
+        <p>Shortly you will find a confirmation in your email.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-custom" data-bs-dismiss="modal">Continue</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 
 <!---- ==========   Footer Section Design   ========== ---->
-<!-- <footer>
+<footer>
     <div class="container">
       <div class="row pb-3">
         <div class="col-md-6">
@@ -272,7 +339,7 @@
         </div>
       </div>
     </div>
-</footer> -->
+</footer>
 
 <!---- ==========   My Custom JS Code   ========== ---->
 <script src="assets/js/script.js"></script>

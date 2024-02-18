@@ -28,9 +28,10 @@ img {
     padding: 12px 22px;
     font-size: 16px;
     font-weight: 600;
+    color: white;
 }
-.btn-cutom:hover{
-    background-color: var(--color);
+.btn-custom:hover{
+    background-color: #3de623;
 }
 .title{
     font-size: 38px;
@@ -97,8 +98,12 @@ img {
 }
 .booking .d-flex i{
     font-size: 30px;
-    margin-right: 30px;
+    margin-right: 20px;
     margin-top: 5px;
+}
+.booking h4{
+    font-size: 28px;
+    font-weight: 600;
 }
 .box{
     background-color: white;
@@ -137,8 +142,9 @@ img {
     font-size: 18px;
     font-weight: 600;
 }
-.booking .cupon input{
-    
+.booking .time-btn{
+    background-color: gray;
+    color: white;
 }
 
 
@@ -155,3 +161,20 @@ footer p{
     margin-bottom: 0;
 }
 
+
+
+@media screen and (max-width: 768px) {
+    .booking .set{
+        width: 80px;
+    }
+    .banner p{
+        width: 400px;
+        color: white;
+        margin: auto;
+        padding: 20px 0;
+    }
+    .text-end{
+        text-align: center;
+        align-items: center;
+    }
+}
